@@ -1,0 +1,13 @@
+{
+    "name": "michal/twa-zad-1",
+    "description": "Zadanie do skoly na predmet TWA",
+    "authors": [
+        {
+            "name": "Michal Cech",
+            "email": "cech.michal@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    }
+}
