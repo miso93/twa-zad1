@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
                 <img
-                    src="piechart.php?values=<?php echo implode(",", $d["data"]) ?>&labels=<?php echo implode(",", array_keys($d["data"])) ?>&title=<?php echo htmlspecialchars($d["title"]) ?>"
+                    src="piechart.php?values=<?php echo implode(",", $d["data"]) ?>&labels=<?php echo implode(",", array_keys($d["data"])) ?>&title=<?php echo urlencode($d["title"]) ?>"
                     alt="graph" class="img-responsive center-block m-top-60"/>
             </div>
             <div class="col-sm-12"><hr></div>
