@@ -40,7 +40,7 @@
             <a href="page-php-barchart.php" class="thumbnail clearfix">
                 <?php foreach ($data as $year => $d): ?>
                     <img
-                        src="chart.php?values=<?php echo implode(",", $d["data"]) ?>&labels=<?php echo implode(",", array_keys($d["data"])) ?>&title=<?php echo $d["title"] ?>"
+                        src="chart.php?values=<?php echo implode(",", $d["data"]) ?>&labels=<?php echo implode(",", array_keys($d["data"])) ?>&title=<?php echo htmlspecialchars($d["title"]) ?>"
                         alt="graph" class="img-responsive max-w-30per pull-left"/>
                 <?php endforeach; ?>
                 <div class="caption">
@@ -52,7 +52,7 @@
             <a href="page-php-piechart.php" class="thumbnail clearfix">
                 <?php foreach ($data as $year => $d): ?>
                     <img
-                        src="piechart.php?values=<?php echo implode(",", $d["data"]) ?>&labels=<?php echo implode(",", array_keys($d["data"])) ?>&title=<?php echo $d["title"] ?>"
+                        src="piechart.php?values=<?php echo implode(",", $d["data"]) ?>&labels=<?php echo implode(",", array_keys($d["data"])) ?>&title=<?php echo htmlspecialchars($d["title"]) ?>"
                         alt="graph" class="img-responsive max-w-30per pull-left"/>
                 <?php endforeach; ?>
                 <div class="caption">
