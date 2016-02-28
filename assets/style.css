@@ -24,6 +24,9 @@ img.max-w-30per {
 .m-left-30 {
     margin-left: 30px;
 }
+body > article > .container {
+    overflow-x: hidden;
+}
 a {
     color: #494a43;
 }
